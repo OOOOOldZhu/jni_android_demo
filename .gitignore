@@ -1,9 +1,12 @@
 
 
 *.class
+
+/cctools/build/
 /cctools/.gradle/
 /cctools/.idea/
 
+/cctools2/build/
 /cctools_2/.gradle/
 /cctools_2/.idea/
 
