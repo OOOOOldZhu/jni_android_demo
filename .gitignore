@@ -1,4 +1,6 @@
 
+
+*.class
 /cctools/.gradle/
 /cctools/.idea/
 
