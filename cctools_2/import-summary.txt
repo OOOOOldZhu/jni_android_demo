@@ -1,0 +1,645 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From CCTools:
+* ant.properties
+* build.xml
+* cctools.png
+* proguard-project.txt
+From apkbuilder:
+* build.xml
+* proguard-project.txt
+From emulatorview:
+* .DS_Store
+* ant.properties
+* build.xml
+* docs/
+* docs/.svn/
+* docs/.svn/all-wcprops
+* docs/.svn/entries
+* docs/.svn/prop-base/
+* docs/.svn/prop-base/generate-docs.sh.svn-base
+* docs/.svn/text-base/
+* docs/.svn/text-base/allclasses-frame.html.svn-base
+* docs/.svn/text-base/allclasses-noframe.html.svn-base
+* docs/.svn/text-base/constant-values.html.svn-base
+* docs/.svn/text-base/deprecated-list.html.svn-base
+* docs/.svn/text-base/generate-docs.sh.svn-base
+* docs/.svn/text-base/help-doc.html.svn-base
+* docs/.svn/text-base/index-all.html.svn-base
+* docs/.svn/text-base/index.html.svn-base
+* docs/.svn/text-base/overview-tree.html.svn-base
+* docs/.svn/text-base/package-list.svn-base
+* docs/.svn/text-base/stylesheet.css.svn-base
+* docs/allclasses-frame.html
+* docs/allclasses-noframe.html
+* docs/constant-values.html
+* docs/deprecated-list.html
+* docs/generate-docs.sh
+* docs/help-doc.html
+* docs/index-all.html
+* docs/index.html
+* docs/jackpal/
+* docs/jackpal/.svn/
+* docs/jackpal/.svn/all-wcprops
+* docs/jackpal/.svn/entries
+* docs/jackpal/androidterm/
+* docs/jackpal/androidterm/.svn/
+* docs/jackpal/androidterm/.svn/all-wcprops
+* docs/jackpal/androidterm/.svn/entries
+* docs/jackpal/androidterm/emulatorview/
+* docs/jackpal/androidterm/emulatorview/.svn/
+* docs/jackpal/androidterm/emulatorview/.svn/all-wcprops
+* docs/jackpal/androidterm/emulatorview/.svn/entries
+* docs/jackpal/androidterm/emulatorview/.svn/text-base/
+* docs/jackpal/androidterm/emulatorview/.svn/text-base/ColorScheme.html.svn-base
+* docs/jackpal/androidterm/emulatorview/.svn/text-base/EmulatorView.html.svn-base
+* docs/jackpal/androidterm/emulatorview/.svn/text-base/TermSession.FinishCallback.html.svn-base
+* docs/jackpal/androidterm/emulatorview/.svn/text-base/TermSession.html.svn-base
+* docs/jackpal/androidterm/emulatorview/.svn/text-base/UpdateCallback.html.svn-base
+* docs/jackpal/androidterm/emulatorview/.svn/text-base/package-frame.html.svn-base
+* docs/jackpal/androidterm/emulatorview/.svn/text-base/package-summary.html.svn-base
+* docs/jackpal/androidterm/emulatorview/.svn/text-base/package-tree.html.svn-base
+* docs/jackpal/androidterm/emulatorview/ColorScheme.html
+* docs/jackpal/androidterm/emulatorview/EmulatorView.html
+* docs/jackpal/androidterm/emulatorview/TermSession.FinishCallback.html
+* docs/jackpal/androidterm/emulatorview/TermSession.html
+* docs/jackpal/androidterm/emulatorview/UpdateCallback.html
+* docs/jackpal/androidterm/emulatorview/package-frame.html
+* docs/jackpal/androidterm/emulatorview/package-summary.html
+* docs/jackpal/androidterm/emulatorview/package-tree.html
+* docs/overview-tree.html
+* docs/package-list
+* docs/resources/
+* docs/resources/.svn/
+* docs/resources/.svn/all-wcprops
+* docs/resources/.svn/entries
+* docs/resources/.svn/prop-base/
+* docs/resources/.svn/prop-base/inherit.gif.svn-base
+* docs/resources/.svn/text-base/
+* docs/resources/.svn/text-base/inherit.gif.svn-base
+* docs/resources/inherit.gif
+* docs/stylesheet.css
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+actionbarsherlock =>
+    com.actionbarsherlock:actionbarsherlock:4.4.0@aar
+    com.android.support:support-v4:18.0.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In apkbuilder:
+* AndroidManifest.xml => apkbuilder/src/main/AndroidManifest.xml
+* assets/ => apkbuilder/src/main/assets
+* res/ => apkbuilder/src/main/res
+* src/ => apkbuilder/src/main/java/
+* src/com/android/sdklib/repository/sdk-addon-1.xsd => apkbuilder/src/main/resources/com/android/sdklib/repository/sdk-addon-1.xsd
+* src/com/android/sdklib/repository/sdk-repository-1.xsd => apkbuilder/src/main/resources/com/android/sdklib/repository/sdk-repository-1.xsd
+* src/com/android/sdklib/repository/sdk-repository-2.xsd => apkbuilder/src/main/resources/com/android/sdklib/repository/sdk-repository-2.xsd
+* src/com/android/sdklib/repository/sdk-repository-3.xsd => apkbuilder/src/main/resources/com/android/sdklib/repository/sdk-repository-3.xsd
+* src/com/sun/tools/javac/resources/compiler.properties => apkbuilder/src/main/resources/com/sun/tools/javac/resources/compiler.properties
+* src/com/sun/tools/javac/resources/compiler_ja.properties => apkbuilder/src/main/resources/com/sun/tools/javac/resources/compiler_ja.properties
+* src/com/sun/tools/javac/resources/compiler_zh_CN.properties => apkbuilder/src/main/resources/com/sun/tools/javac/resources/compiler_zh_CN.properties
+* src/com/sun/tools/javac/resources/javac.properties => apkbuilder/src/main/resources/com/sun/tools/javac/resources/javac.properties
+* src/com/sun/tools/javac/resources/javac_ja.properties => apkbuilder/src/main/resources/com/sun/tools/javac/resources/javac_ja.properties
+* src/com/sun/tools/javac/resources/javac_zh_CN.properties => apkbuilder/src/main/resources/com/sun/tools/javac/resources/javac_zh_CN.properties
+* src/com/sun/tools/javac/resources/legacy.properties => apkbuilder/src/main/resources/com/sun/tools/javac/resources/legacy.properties
+* src/com/sun/tools/javac/resources/version.properties-template => apkbuilder/src/main/resources/com/sun/tools/javac/resources/version.properties-template
+* src/com/sun/tools/javac/services/javax.tools.JavaCompilerTool => apkbuilder/src/main/resources/com/sun/tools/javac/services/javax.tools.JavaCompilerTool
+* src/javax/lang/model/overview.html => apkbuilder/src/main/resources/javax/lang/model/overview.html
+* src/javax/tools/overview.html => apkbuilder/src/main/resources/javax/tools/overview.html
+* src/proguard/MANIFEST.MF => apkbuilder/src/main/resources/proguard/MANIFEST.MF
+* src/proguard/classfile/attribute/annotation/package.html => apkbuilder/src/main/resources/proguard/classfile/attribute/annotation/package.html
+* src/proguard/classfile/attribute/annotation/visitor/package.html => apkbuilder/src/main/resources/proguard/classfile/attribute/annotation/visitor/package.html
+* src/proguard/classfile/attribute/package.html => apkbuilder/src/main/resources/proguard/classfile/attribute/package.html
+* src/proguard/classfile/attribute/visitor/package.html => apkbuilder/src/main/resources/proguard/classfile/attribute/visitor/package.html
+* src/proguard/classfile/constant/visitor/package.html => apkbuilder/src/main/resources/proguard/classfile/constant/visitor/package.html
+* src/proguard/classfile/editor/package.html => apkbuilder/src/main/resources/proguard/classfile/editor/package.html
+* src/proguard/classfile/instruction/package.html => apkbuilder/src/main/resources/proguard/classfile/instruction/package.html
+* src/proguard/classfile/instruction/visitor/package.html => apkbuilder/src/main/resources/proguard/classfile/instruction/visitor/package.html
+* src/proguard/classfile/io/package.html => apkbuilder/src/main/resources/proguard/classfile/io/package.html
+* src/proguard/classfile/package.html => apkbuilder/src/main/resources/proguard/classfile/package.html
+* src/proguard/classfile/util/package.html => apkbuilder/src/main/resources/proguard/classfile/util/package.html
+* src/proguard/classfile/visitor/package.html => apkbuilder/src/main/resources/proguard/classfile/visitor/package.html
+* src/proguard/evaluation/value/package.html => apkbuilder/src/main/resources/proguard/evaluation/value/package.html
+* src/proguard/io/package.html => apkbuilder/src/main/resources/proguard/io/package.html
+* src/proguard/obfuscate/package.html => apkbuilder/src/main/resources/proguard/obfuscate/package.html
+* src/proguard/optimize/evaluation/package.html => apkbuilder/src/main/resources/proguard/optimize/evaluation/package.html
+* src/proguard/optimize/info/package.html => apkbuilder/src/main/resources/proguard/optimize/info/package.html
+* src/proguard/optimize/package.html => apkbuilder/src/main/resources/proguard/optimize/package.html
+* src/proguard/optimize/peephole/package.html => apkbuilder/src/main/resources/proguard/optimize/peephole/package.html
+* src/proguard/package.html => apkbuilder/src/main/resources/proguard/package.html
+* src/proguard/retrace/MANIFEST.MF => apkbuilder/src/main/resources/proguard/retrace/MANIFEST.MF
+* src/proguard/retrace/package.html => apkbuilder/src/main/resources/proguard/retrace/package.html
+* src/proguard/shrink/package.html => apkbuilder/src/main/resources/proguard/shrink/package.html
+* src/proguard/util/package.html => apkbuilder/src/main/resources/proguard/util/package.html
+* src/sun/reflect/package.html => apkbuilder/src/main/resources/sun/reflect/package.html
+In emulatorview:
+* AndroidManifest.xml => emulatorview/src/main/AndroidManifest.xml
+* assets/ => emulatorview/src/main/assets
+* res/ => emulatorview/src/main/res/
+* src/ => emulatorview/src/main/java/
+* src/jackpal/androidterm/emulatorview/package.html => emulatorview/src/main/resources/jackpal/androidterm/emulatorview/package.html
+In CCTools:
+* AndroidManifest.xml => cCTools/src/main/AndroidManifest.xml
+* assets/ => cCTools/src/main/assets/
+* jni/ => cCTools/src/main/jni/
+* libraries/ => cCTools/src/main/java/
+* libraries/actionbarsherlock/.classpath => cCTools/src/main/resources/actionbarsherlock/.classpath
+* libraries/actionbarsherlock/.project => cCTools/src/main/resources/actionbarsherlock/.project
+* libraries/actionbarsherlock/AndroidManifest.xml => cCTools/src/main/resources/actionbarsherlock/AndroidManifest.xml
+* libraries/actionbarsherlock/README.md => cCTools/src/main/resources/actionbarsherlock/README.md
+* libraries/actionbarsherlock/build.gradle => cCTools/src/main/resources/actionbarsherlock/build.gradle
+* libraries/actionbarsherlock/build.xml => cCTools/src/main/resources/actionbarsherlock/build.xml
+* libraries/actionbarsherlock/lint.xml => cCTools/src/main/resources/actionbarsherlock/lint.xml
+* libraries/actionbarsherlock/local.properties => cCTools/src/main/resources/actionbarsherlock/local.properties
+* libraries/actionbarsherlock/pom.xml => cCTools/src/main/resources/actionbarsherlock/pom.xml
+* libraries/actionbarsherlock/proguard-project.txt => cCTools/src/main/resources/actionbarsherlock/proguard-project.txt
+* libraries/actionbarsherlock/project.properties => cCTools/src/main/resources/actionbarsherlock/project.properties
+* libraries/actionbarsherlock/res/color/abs__primary_text_disable_only_holo_dark.xml => cCTools/src/main/resources/actionbarsherlock/res/color/abs__primary_text_disable_only_holo_dark.xml
+* libraries/actionbarsherlock/res/color/abs__primary_text_disable_only_holo_light.xml => cCTools/src/main/resources/actionbarsherlock/res/color/abs__primary_text_disable_only_holo_light.xml
+* libraries/actionbarsherlock/res/color/abs__primary_text_holo_dark.xml => cCTools/src/main/resources/actionbarsherlock/res/color/abs__primary_text_holo_dark.xml
+* libraries/actionbarsherlock/res/color/abs__primary_text_holo_light.xml => cCTools/src/main/resources/actionbarsherlock/res/color/abs__primary_text_holo_light.xml
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_solid_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_solid_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_solid_inverse_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_solid_inverse_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_solid_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_solid_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_transparent_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_transparent_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_transparent_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_transparent_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_share_pack_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ab_share_pack_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_share_pack_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ab_share_pack_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_solid_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ab_solid_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_solid_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ab_solid_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_solid_shadow_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ab_solid_shadow_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_stacked_solid_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ab_stacked_solid_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_stacked_solid_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ab_stacked_solid_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_stacked_transparent_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ab_stacked_transparent_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_stacked_transparent_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ab_stacked_transparent_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_transparent_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ab_transparent_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_transparent_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ab_transparent_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_default_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_default_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_default_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_default_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_focused_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_focused_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_focused_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_focused_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_pressed_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_pressed_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_pressed_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_pressed_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__cab_background_bottom_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__cab_background_bottom_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__cab_background_bottom_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__cab_background_bottom_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__cab_background_top_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__cab_background_top_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__cab_background_top_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__cab_background_top_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_ab_back_holo_dark.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_ab_back_holo_dark.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_ab_back_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_ab_back_holo_light.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_cab_done_holo_dark.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_cab_done_holo_dark.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_cab_done_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_cab_done_holo_light.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_clear_disabled.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_clear_disabled.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_clear_normal.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_clear_normal.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_clear_search_api_disabled_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_clear_search_api_disabled_holo_light.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_clear_search_api_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_clear_search_api_holo_light.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_commit_search_api_holo_dark.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_commit_search_api_holo_dark.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_commit_search_api_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_commit_search_api_holo_light.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_go.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_go.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_go_search_api_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_go_search_api_holo_light.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_light.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_share_holo_dark.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_share_holo_dark.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_share_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_share_holo_light.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_search.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_search.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_search_api_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_search_api_holo_light.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_voice_search.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_voice_search.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_voice_search_api_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__ic_voice_search_api_holo_light.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__list_focused_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__list_focused_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__list_pressed_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__list_pressed_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__list_pressed_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__list_pressed_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__list_selector_disabled_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__list_selector_disabled_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__list_selector_disabled_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__list_selector_disabled_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__menu_dropdown_panel_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__menu_dropdown_panel_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__menu_dropdown_panel_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__menu_dropdown_panel_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__progress_bg_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__progress_bg_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__progress_bg_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__progress_bg_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__progress_primary_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__progress_primary_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__progress_primary_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__progress_primary_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__progress_secondary_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__progress_secondary_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__progress_secondary_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__progress_secondary_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_48_inner_holo.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__spinner_48_inner_holo.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_48_outer_holo.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__spinner_48_outer_holo.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_default_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_default_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_default_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_default_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_disabled_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_disabled_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_disabled_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_disabled_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_focused_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_focused_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_focused_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_focused_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_pressed_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_pressed_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_pressed_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_pressed_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__tab_selected_focused_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__tab_selected_focused_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__tab_selected_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__tab_selected_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__tab_selected_pressed_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__tab_selected_pressed_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__tab_unselected_pressed_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__tab_unselected_pressed_holo.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_default_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_default_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_default_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_default_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_right_default_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_right_default_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_right_default_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_right_default_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_right_selected_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_right_selected_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_right_selected_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_right_selected_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_selected_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_selected_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_selected_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_selected_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-hdpi/abs__toast_frame.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-hdpi/abs__toast_frame.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_solid_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_solid_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_solid_inverse_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_solid_inverse_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_solid_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_solid_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_transparent_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_transparent_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_transparent_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_transparent_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_share_pack_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ab_share_pack_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_share_pack_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ab_share_pack_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_solid_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ab_solid_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_solid_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ab_solid_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_solid_shadow_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ab_solid_shadow_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_solid_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_solid_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_solid_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_solid_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_transparent_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_transparent_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_transparent_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_transparent_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_transparent_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ab_transparent_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_transparent_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ab_transparent_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_default_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_default_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_default_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_default_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_focused_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_focused_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_focused_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_focused_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__cab_background_bottom_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__cab_background_bottom_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__cab_background_bottom_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__cab_background_bottom_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__cab_background_top_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__cab_background_top_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__cab_background_top_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__cab_background_top_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_ab_back_holo_dark.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_ab_back_holo_dark.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_ab_back_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_ab_back_holo_light.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_cab_done_holo_dark.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_cab_done_holo_dark.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_cab_done_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_cab_done_holo_light.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_disabled.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_disabled.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_normal.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_normal.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_search_api_disabled_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_search_api_disabled_holo_light.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_search_api_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_search_api_holo_light.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_commit_search_api_holo_dark.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_commit_search_api_holo_dark.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_commit_search_api_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_commit_search_api_holo_light.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_go.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_go.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_go_search_api_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_go_search_api_holo_light.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_light.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_share_holo_dark.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_share_holo_dark.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_share_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_share_holo_light.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_search.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_search.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_search_api_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_search_api_holo_light.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_voice_search.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_voice_search.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_voice_search_api_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__ic_voice_search_api_holo_light.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__list_activated_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__list_activated_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__list_focused_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__list_focused_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__list_longpressed_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__list_longpressed_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__list_selector_disabled_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__list_selector_disabled_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__list_selector_disabled_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__list_selector_disabled_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__menu_dropdown_panel_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__menu_dropdown_panel_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__menu_dropdown_panel_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__menu_dropdown_panel_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__progress_bg_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__progress_bg_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__progress_bg_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__progress_bg_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_48_inner_holo.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__spinner_48_inner_holo.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_48_outer_holo.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__spinner_48_outer_holo.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_default_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_default_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_default_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_default_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_disabled_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_disabled_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_disabled_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_disabled_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_focused_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_focused_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_focused_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_focused_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_pressed_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_pressed_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_pressed_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_pressed_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__tab_selected_focused_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__tab_selected_focused_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__tab_selected_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__tab_selected_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__tab_selected_pressed_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__tab_selected_pressed_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__tab_unselected_pressed_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__tab_unselected_pressed_holo.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_default_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_default_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_default_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_default_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_default_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_default_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_default_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_default_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_selected_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_selected_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_selected_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_selected_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-mdpi/abs__toast_frame.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-mdpi/abs__toast_frame.9.png
+* libraries/actionbarsherlock/res/drawable-v11/abs__progress_medium_holo.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable-v11/abs__progress_medium_holo.xml
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_solid_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_solid_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_solid_inverse_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_solid_inverse_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_solid_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_solid_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_transparent_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_transparent_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_transparent_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_transparent_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_share_pack_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ab_share_pack_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_share_pack_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ab_share_pack_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_solid_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ab_solid_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_solid_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ab_solid_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_solid_shadow_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ab_solid_shadow_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_stacked_solid_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ab_stacked_solid_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_stacked_solid_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ab_stacked_solid_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_stacked_transparent_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ab_stacked_transparent_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_stacked_transparent_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ab_stacked_transparent_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_transparent_dark_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ab_transparent_dark_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_transparent_light_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ab_transparent_light_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_default_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_default_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_default_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_default_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__cab_background_bottom_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__cab_background_bottom_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__cab_background_bottom_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__cab_background_bottom_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__cab_background_top_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__cab_background_top_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__cab_background_top_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__cab_background_top_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_ab_back_holo_dark.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_ab_back_holo_dark.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_ab_back_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_ab_back_holo_light.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_cab_done_holo_dark.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_cab_done_holo_dark.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_cab_done_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_cab_done_holo_light.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_clear_disabled.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_clear_disabled.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_clear_search_api_disabled_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_clear_search_api_disabled_holo_light.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_clear_search_api_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_clear_search_api_holo_light.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_commit_search_api_holo_dark.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_commit_search_api_holo_dark.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_commit_search_api_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_commit_search_api_holo_light.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_go.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_go.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_go_search_api_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_go_search_api_holo_light.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_light.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_menu_share_holo_dark.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_menu_share_holo_dark.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_menu_share_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_menu_share_holo_light.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_search.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_search.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_search_api_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_search_api_holo_light.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_voice_search.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_voice_search.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_voice_search_api_holo_light.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__ic_voice_search_api_holo_light.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_activated_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__list_activated_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_divider_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__list_divider_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_divider_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__list_divider_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_focused_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__list_focused_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_longpressed_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__list_longpressed_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_pressed_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__list_pressed_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_pressed_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__list_pressed_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_selector_disabled_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__list_selector_disabled_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_selector_disabled_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__list_selector_disabled_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__progress_bg_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__progress_bg_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__progress_bg_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__progress_bg_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__progress_primary_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__progress_primary_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__progress_primary_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__progress_primary_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__progress_secondary_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__progress_secondary_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__progress_secondary_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__progress_secondary_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_48_inner_holo.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__spinner_48_inner_holo.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_48_outer_holo.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__spinner_48_outer_holo.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_default_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_default_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_default_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_default_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_focused_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_focused_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_focused_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_focused_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__tab_selected_focused_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__tab_selected_focused_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__tab_selected_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__tab_selected_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__tab_selected_pressed_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__tab_selected_pressed_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__tab_unselected_pressed_holo.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__tab_unselected_pressed_holo.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_default_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_default_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_default_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_default_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_default_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_default_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_default_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_default_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_selected_holo_dark.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_selected_holo_dark.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_selected_holo_light.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_selected_holo_light.9.png
+* libraries/actionbarsherlock/res/drawable-xhdpi/abs__toast_frame.9.png => cCTools/src/main/resources/actionbarsherlock/res/drawable-xhdpi/abs__toast_frame.9.png
+* libraries/actionbarsherlock/res/drawable/abs__activated_background_holo_dark.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__activated_background_holo_dark.xml
+* libraries/actionbarsherlock/res/drawable/abs__activated_background_holo_light.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__activated_background_holo_light.xml
+* libraries/actionbarsherlock/res/drawable/abs__btn_cab_done_holo_dark.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__btn_cab_done_holo_dark.xml
+* libraries/actionbarsherlock/res/drawable/abs__btn_cab_done_holo_light.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__btn_cab_done_holo_light.xml
+* libraries/actionbarsherlock/res/drawable/abs__ic_clear.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__ic_clear.xml
+* libraries/actionbarsherlock/res/drawable/abs__ic_clear_holo_light.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__ic_clear_holo_light.xml
+* libraries/actionbarsherlock/res/drawable/abs__ic_menu_moreoverflow_holo_dark.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__ic_menu_moreoverflow_holo_dark.xml
+* libraries/actionbarsherlock/res/drawable/abs__ic_menu_moreoverflow_holo_light.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__ic_menu_moreoverflow_holo_light.xml
+* libraries/actionbarsherlock/res/drawable/abs__item_background_holo_dark.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__item_background_holo_dark.xml
+* libraries/actionbarsherlock/res/drawable/abs__item_background_holo_light.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__item_background_holo_light.xml
+* libraries/actionbarsherlock/res/drawable/abs__list_selector_background_transition_holo_dark.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__list_selector_background_transition_holo_dark.xml
+* libraries/actionbarsherlock/res/drawable/abs__list_selector_background_transition_holo_light.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__list_selector_background_transition_holo_light.xml
+* libraries/actionbarsherlock/res/drawable/abs__list_selector_holo_dark.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__list_selector_holo_dark.xml
+* libraries/actionbarsherlock/res/drawable/abs__list_selector_holo_light.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__list_selector_holo_light.xml
+* libraries/actionbarsherlock/res/drawable/abs__progress_horizontal_holo_dark.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__progress_horizontal_holo_dark.xml
+* libraries/actionbarsherlock/res/drawable/abs__progress_horizontal_holo_light.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__progress_horizontal_holo_light.xml
+* libraries/actionbarsherlock/res/drawable/abs__progress_medium_holo.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__progress_medium_holo.xml
+* libraries/actionbarsherlock/res/drawable/abs__search_dropdown_dark.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__search_dropdown_dark.xml
+* libraries/actionbarsherlock/res/drawable/abs__search_dropdown_light.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__search_dropdown_light.xml
+* libraries/actionbarsherlock/res/drawable/abs__spinner_ab_holo_dark.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__spinner_ab_holo_dark.xml
+* libraries/actionbarsherlock/res/drawable/abs__spinner_ab_holo_light.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__spinner_ab_holo_light.xml
+* libraries/actionbarsherlock/res/drawable/abs__tab_indicator_ab_holo.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__tab_indicator_ab_holo.xml
+* libraries/actionbarsherlock/res/drawable/abs__textfield_searchview_holo_dark.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__textfield_searchview_holo_dark.xml
+* libraries/actionbarsherlock/res/drawable/abs__textfield_searchview_holo_light.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__textfield_searchview_holo_light.xml
+* libraries/actionbarsherlock/res/drawable/abs__textfield_searchview_right_holo_dark.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__textfield_searchview_right_holo_dark.xml
+* libraries/actionbarsherlock/res/drawable/abs__textfield_searchview_right_holo_light.xml => cCTools/src/main/resources/actionbarsherlock/res/drawable/abs__textfield_searchview_right_holo_light.xml
+* libraries/actionbarsherlock/res/layout-large/abs__action_mode_close_item.xml => cCTools/src/main/resources/actionbarsherlock/res/layout-large/abs__action_mode_close_item.xml
+* libraries/actionbarsherlock/res/layout-v14/sherlock_spinner_dropdown_item.xml => cCTools/src/main/resources/actionbarsherlock/res/layout-v14/sherlock_spinner_dropdown_item.xml
+* libraries/actionbarsherlock/res/layout-v14/sherlock_spinner_item.xml => cCTools/src/main/resources/actionbarsherlock/res/layout-v14/sherlock_spinner_item.xml
+* libraries/actionbarsherlock/res/layout-xlarge/abs__screen_action_bar.xml => cCTools/src/main/resources/actionbarsherlock/res/layout-xlarge/abs__screen_action_bar.xml
+* libraries/actionbarsherlock/res/layout-xlarge/abs__screen_action_bar_overlay.xml => cCTools/src/main/resources/actionbarsherlock/res/layout-xlarge/abs__screen_action_bar_overlay.xml
+* libraries/actionbarsherlock/res/layout/abs__action_bar_home.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__action_bar_home.xml
+* libraries/actionbarsherlock/res/layout/abs__action_bar_tab.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__action_bar_tab.xml
+* libraries/actionbarsherlock/res/layout/abs__action_bar_tab_bar_view.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__action_bar_tab_bar_view.xml
+* libraries/actionbarsherlock/res/layout/abs__action_bar_title_item.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__action_bar_title_item.xml
+* libraries/actionbarsherlock/res/layout/abs__action_menu_item_layout.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__action_menu_item_layout.xml
+* libraries/actionbarsherlock/res/layout/abs__action_menu_layout.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__action_menu_layout.xml
+* libraries/actionbarsherlock/res/layout/abs__action_mode_bar.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__action_mode_bar.xml
+* libraries/actionbarsherlock/res/layout/abs__action_mode_close_item.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__action_mode_close_item.xml
+* libraries/actionbarsherlock/res/layout/abs__activity_chooser_view.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__activity_chooser_view.xml
+* libraries/actionbarsherlock/res/layout/abs__activity_chooser_view_list_item.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__activity_chooser_view_list_item.xml
+* libraries/actionbarsherlock/res/layout/abs__list_menu_item_checkbox.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__list_menu_item_checkbox.xml
+* libraries/actionbarsherlock/res/layout/abs__list_menu_item_icon.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__list_menu_item_icon.xml
+* libraries/actionbarsherlock/res/layout/abs__list_menu_item_radio.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__list_menu_item_radio.xml
+* libraries/actionbarsherlock/res/layout/abs__popup_menu_item_layout.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__popup_menu_item_layout.xml
+* libraries/actionbarsherlock/res/layout/abs__screen_action_bar.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__screen_action_bar.xml
+* libraries/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml
+* libraries/actionbarsherlock/res/layout/abs__screen_simple.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__screen_simple.xml
+* libraries/actionbarsherlock/res/layout/abs__screen_simple_overlay_action_mode.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__screen_simple_overlay_action_mode.xml
+* libraries/actionbarsherlock/res/layout/abs__search_dropdown_item_icons_2line.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__search_dropdown_item_icons_2line.xml
+* libraries/actionbarsherlock/res/layout/abs__search_view.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__search_view.xml
+* libraries/actionbarsherlock/res/layout/abs__simple_dropdown_hint.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/abs__simple_dropdown_hint.xml
+* libraries/actionbarsherlock/res/layout/sherlock_spinner_dropdown_item.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/sherlock_spinner_dropdown_item.xml
+* libraries/actionbarsherlock/res/layout/sherlock_spinner_item.xml => cCTools/src/main/resources/actionbarsherlock/res/layout/sherlock_spinner_item.xml
+* libraries/actionbarsherlock/res/values-land/abs__dimens.xml => cCTools/src/main/resources/actionbarsherlock/res/values-land/abs__dimens.xml
+* libraries/actionbarsherlock/res/values-large-hdpi-1024x600/abs__dimens.xml => cCTools/src/main/resources/actionbarsherlock/res/values-large-hdpi-1024x600/abs__dimens.xml
+* libraries/actionbarsherlock/res/values-large-land-hdpi-1024x600/abs__dimens.xml => cCTools/src/main/resources/actionbarsherlock/res/values-large-land-hdpi-1024x600/abs__dimens.xml
+* libraries/actionbarsherlock/res/values-large-land-mdpi-1024x600/abs__dimens.xml => cCTools/src/main/resources/actionbarsherlock/res/values-large-land-mdpi-1024x600/abs__dimens.xml
+* libraries/actionbarsherlock/res/values-large-mdpi-1024x600/abs__dimens.xml => cCTools/src/main/resources/actionbarsherlock/res/values-large-mdpi-1024x600/abs__dimens.xml
+* libraries/actionbarsherlock/res/values-sw600dp/abs__bools.xml => cCTools/src/main/resources/actionbarsherlock/res/values-sw600dp/abs__bools.xml
+* libraries/actionbarsherlock/res/values-sw600dp/abs__dimens.xml => cCTools/src/main/resources/actionbarsherlock/res/values-sw600dp/abs__dimens.xml
+* libraries/actionbarsherlock/res/values-v11/abs__themes.xml => cCTools/src/main/resources/actionbarsherlock/res/values-v11/abs__themes.xml
+* libraries/actionbarsherlock/res/values-v14/abs__styles.xml => cCTools/src/main/resources/actionbarsherlock/res/values-v14/abs__styles.xml
+* libraries/actionbarsherlock/res/values-v14/abs__themes.xml => cCTools/src/main/resources/actionbarsherlock/res/values-v14/abs__themes.xml
+* libraries/actionbarsherlock/res/values-w360dp/abs__dimens.xml => cCTools/src/main/resources/actionbarsherlock/res/values-w360dp/abs__dimens.xml
+* libraries/actionbarsherlock/res/values-w480dp/abs__bools.xml => cCTools/src/main/resources/actionbarsherlock/res/values-w480dp/abs__bools.xml
+* libraries/actionbarsherlock/res/values-w480dp/abs__config.xml => cCTools/src/main/resources/actionbarsherlock/res/values-w480dp/abs__config.xml
+* libraries/actionbarsherlock/res/values-w500dp/abs__dimens.xml => cCTools/src/main/resources/actionbarsherlock/res/values-w500dp/abs__dimens.xml
+* libraries/actionbarsherlock/res/values-w600dp/abs__dimens.xml => cCTools/src/main/resources/actionbarsherlock/res/values-w600dp/abs__dimens.xml
+* libraries/actionbarsherlock/res/values-xlarge/abs__dimens.xml => cCTools/src/main/resources/actionbarsherlock/res/values-xlarge/abs__dimens.xml
+* libraries/actionbarsherlock/res/values/abs__attrs.xml => cCTools/src/main/resources/actionbarsherlock/res/values/abs__attrs.xml
+* libraries/actionbarsherlock/res/values/abs__bools.xml => cCTools/src/main/resources/actionbarsherlock/res/values/abs__bools.xml
+* libraries/actionbarsherlock/res/values/abs__colors.xml => cCTools/src/main/resources/actionbarsherlock/res/values/abs__colors.xml
+* libraries/actionbarsherlock/res/values/abs__config.xml => cCTools/src/main/resources/actionbarsherlock/res/values/abs__config.xml
+* libraries/actionbarsherlock/res/values/abs__dimens.xml => cCTools/src/main/resources/actionbarsherlock/res/values/abs__dimens.xml
+* libraries/actionbarsherlock/res/values/abs__ids.xml => cCTools/src/main/resources/actionbarsherlock/res/values/abs__ids.xml
+* libraries/actionbarsherlock/res/values/abs__strings.xml => cCTools/src/main/resources/actionbarsherlock/res/values/abs__strings.xml
+* libraries/actionbarsherlock/res/values/abs__styles.xml => cCTools/src/main/resources/actionbarsherlock/res/values/abs__styles.xml
+* libraries/actionbarsherlock/res/values/abs__themes.xml => cCTools/src/main/resources/actionbarsherlock/res/values/abs__themes.xml
+* libraries/apkbuilder/AndroidManifest.xml => cCTools/src/main/resources/apkbuilder/AndroidManifest.xml
+* libraries/apkbuilder/build.xml => cCTools/src/main/resources/apkbuilder/build.xml
+* libraries/apkbuilder/local.properties => cCTools/src/main/resources/apkbuilder/local.properties
+* libraries/apkbuilder/proguard-project.txt => cCTools/src/main/resources/apkbuilder/proguard-project.txt
+* libraries/apkbuilder/project.properties => cCTools/src/main/resources/apkbuilder/project.properties
+* libraries/apkbuilder/src/com/android/sdklib/repository/sdk-addon-1.xsd => cCTools/src/main/resources/apkbuilder/src/com/android/sdklib/repository/sdk-addon-1.xsd
+* libraries/apkbuilder/src/com/android/sdklib/repository/sdk-repository-1.xsd => cCTools/src/main/resources/apkbuilder/src/com/android/sdklib/repository/sdk-repository-1.xsd
+* libraries/apkbuilder/src/com/android/sdklib/repository/sdk-repository-2.xsd => cCTools/src/main/resources/apkbuilder/src/com/android/sdklib/repository/sdk-repository-2.xsd
+* libraries/apkbuilder/src/com/android/sdklib/repository/sdk-repository-3.xsd => cCTools/src/main/resources/apkbuilder/src/com/android/sdklib/repository/sdk-repository-3.xsd
+* libraries/apkbuilder/src/com/sun/tools/javac/resources/compiler.properties => cCTools/src/main/resources/apkbuilder/src/com/sun/tools/javac/resources/compiler.properties
+* libraries/apkbuilder/src/com/sun/tools/javac/resources/compiler_ja.properties => cCTools/src/main/resources/apkbuilder/src/com/sun/tools/javac/resources/compiler_ja.properties
+* libraries/apkbuilder/src/com/sun/tools/javac/resources/compiler_zh_CN.properties => cCTools/src/main/resources/apkbuilder/src/com/sun/tools/javac/resources/compiler_zh_CN.properties
+* libraries/apkbuilder/src/com/sun/tools/javac/resources/javac.properties => cCTools/src/main/resources/apkbuilder/src/com/sun/tools/javac/resources/javac.properties
+* libraries/apkbuilder/src/com/sun/tools/javac/resources/javac_ja.properties => cCTools/src/main/resources/apkbuilder/src/com/sun/tools/javac/resources/javac_ja.properties
+* libraries/apkbuilder/src/com/sun/tools/javac/resources/javac_zh_CN.properties => cCTools/src/main/resources/apkbuilder/src/com/sun/tools/javac/resources/javac_zh_CN.properties
+* libraries/apkbuilder/src/com/sun/tools/javac/resources/legacy.properties => cCTools/src/main/resources/apkbuilder/src/com/sun/tools/javac/resources/legacy.properties
+* libraries/apkbuilder/src/com/sun/tools/javac/resources/version.properties-template => cCTools/src/main/resources/apkbuilder/src/com/sun/tools/javac/resources/version.properties-template
+* libraries/apkbuilder/src/com/sun/tools/javac/services/javax.tools.JavaCompilerTool => cCTools/src/main/resources/apkbuilder/src/com/sun/tools/javac/services/javax.tools.JavaCompilerTool
+* libraries/apkbuilder/src/javax/lang/model/overview.html => cCTools/src/main/resources/apkbuilder/src/javax/lang/model/overview.html
+* libraries/apkbuilder/src/javax/tools/overview.html => cCTools/src/main/resources/apkbuilder/src/javax/tools/overview.html
+* libraries/apkbuilder/src/proguard/MANIFEST.MF => cCTools/src/main/resources/apkbuilder/src/proguard/MANIFEST.MF
+* libraries/apkbuilder/src/proguard/classfile/attribute/annotation/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/classfile/attribute/annotation/package.html
+* libraries/apkbuilder/src/proguard/classfile/attribute/annotation/visitor/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/classfile/attribute/annotation/visitor/package.html
+* libraries/apkbuilder/src/proguard/classfile/attribute/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/classfile/attribute/package.html
+* libraries/apkbuilder/src/proguard/classfile/attribute/visitor/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/classfile/attribute/visitor/package.html
+* libraries/apkbuilder/src/proguard/classfile/constant/visitor/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/classfile/constant/visitor/package.html
+* libraries/apkbuilder/src/proguard/classfile/editor/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/classfile/editor/package.html
+* libraries/apkbuilder/src/proguard/classfile/instruction/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/classfile/instruction/package.html
+* libraries/apkbuilder/src/proguard/classfile/instruction/visitor/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/classfile/instruction/visitor/package.html
+* libraries/apkbuilder/src/proguard/classfile/io/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/classfile/io/package.html
+* libraries/apkbuilder/src/proguard/classfile/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/classfile/package.html
+* libraries/apkbuilder/src/proguard/classfile/util/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/classfile/util/package.html
+* libraries/apkbuilder/src/proguard/classfile/visitor/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/classfile/visitor/package.html
+* libraries/apkbuilder/src/proguard/evaluation/value/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/evaluation/value/package.html
+* libraries/apkbuilder/src/proguard/io/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/io/package.html
+* libraries/apkbuilder/src/proguard/obfuscate/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/obfuscate/package.html
+* libraries/apkbuilder/src/proguard/optimize/evaluation/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/optimize/evaluation/package.html
+* libraries/apkbuilder/src/proguard/optimize/info/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/optimize/info/package.html
+* libraries/apkbuilder/src/proguard/optimize/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/optimize/package.html
+* libraries/apkbuilder/src/proguard/optimize/peephole/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/optimize/peephole/package.html
+* libraries/apkbuilder/src/proguard/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/package.html
+* libraries/apkbuilder/src/proguard/retrace/MANIFEST.MF => cCTools/src/main/resources/apkbuilder/src/proguard/retrace/MANIFEST.MF
+* libraries/apkbuilder/src/proguard/retrace/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/retrace/package.html
+* libraries/apkbuilder/src/proguard/shrink/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/shrink/package.html
+* libraries/apkbuilder/src/proguard/util/package.html => cCTools/src/main/resources/apkbuilder/src/proguard/util/package.html
+* libraries/apkbuilder/src/sun/reflect/package.html => cCTools/src/main/resources/apkbuilder/src/sun/reflect/package.html
+* libraries/emulatorview/.DS_Store => cCTools/src/main/resources/emulatorview/.DS_Store
+* libraries/emulatorview/.classpath => cCTools/src/main/resources/emulatorview/.classpath
+* libraries/emulatorview/.project => cCTools/src/main/resources/emulatorview/.project
+* libraries/emulatorview/.settings/org.eclipse.jdt.core.prefs => cCTools/src/main/resources/emulatorview/.settings/org.eclipse.jdt.core.prefs
+* libraries/emulatorview/AndroidManifest.xml => cCTools/src/main/resources/emulatorview/AndroidManifest.xml
+* libraries/emulatorview/ant.properties => cCTools/src/main/resources/emulatorview/ant.properties
+* libraries/emulatorview/build.xml => cCTools/src/main/resources/emulatorview/build.xml
+* libraries/emulatorview/docs/allclasses-frame.html => cCTools/src/main/resources/emulatorview/docs/allclasses-frame.html
+* libraries/emulatorview/docs/allclasses-noframe.html => cCTools/src/main/resources/emulatorview/docs/allclasses-noframe.html
+* libraries/emulatorview/docs/constant-values.html => cCTools/src/main/resources/emulatorview/docs/constant-values.html
+* libraries/emulatorview/docs/deprecated-list.html => cCTools/src/main/resources/emulatorview/docs/deprecated-list.html
+* libraries/emulatorview/docs/generate-docs.sh => cCTools/src/main/resources/emulatorview/docs/generate-docs.sh
+* libraries/emulatorview/docs/help-doc.html => cCTools/src/main/resources/emulatorview/docs/help-doc.html
+* libraries/emulatorview/docs/index-all.html => cCTools/src/main/resources/emulatorview/docs/index-all.html
+* libraries/emulatorview/docs/index.html => cCTools/src/main/resources/emulatorview/docs/index.html
+* libraries/emulatorview/docs/jackpal/androidterm/emulatorview/ColorScheme.html => cCTools/src/main/resources/emulatorview/docs/jackpal/androidterm/emulatorview/ColorScheme.html
+* libraries/emulatorview/docs/jackpal/androidterm/emulatorview/EmulatorView.html => cCTools/src/main/resources/emulatorview/docs/jackpal/androidterm/emulatorview/EmulatorView.html
+* libraries/emulatorview/docs/jackpal/androidterm/emulatorview/TermSession.FinishCallback.html => cCTools/src/main/resources/emulatorview/docs/jackpal/androidterm/emulatorview/TermSession.FinishCallback.html
+* libraries/emulatorview/docs/jackpal/androidterm/emulatorview/TermSession.html => cCTools/src/main/resources/emulatorview/docs/jackpal/androidterm/emulatorview/TermSession.html
+* libraries/emulatorview/docs/jackpal/androidterm/emulatorview/UpdateCallback.html => cCTools/src/main/resources/emulatorview/docs/jackpal/androidterm/emulatorview/UpdateCallback.html
+* libraries/emulatorview/docs/jackpal/androidterm/emulatorview/package-frame.html => cCTools/src/main/resources/emulatorview/docs/jackpal/androidterm/emulatorview/package-frame.html
+* libraries/emulatorview/docs/jackpal/androidterm/emulatorview/package-summary.html => cCTools/src/main/resources/emulatorview/docs/jackpal/androidterm/emulatorview/package-summary.html
+* libraries/emulatorview/docs/jackpal/androidterm/emulatorview/package-tree.html => cCTools/src/main/resources/emulatorview/docs/jackpal/androidterm/emulatorview/package-tree.html
+* libraries/emulatorview/docs/overview-tree.html => cCTools/src/main/resources/emulatorview/docs/overview-tree.html
+* libraries/emulatorview/docs/package-list => cCTools/src/main/resources/emulatorview/docs/package-list
+* libraries/emulatorview/docs/resources/inherit.gif => cCTools/src/main/resources/emulatorview/docs/resources/inherit.gif
+* libraries/emulatorview/docs/stylesheet.css => cCTools/src/main/resources/emulatorview/docs/stylesheet.css
+* libraries/emulatorview/local.properties => cCTools/src/main/resources/emulatorview/local.properties
+* libraries/emulatorview/proguard-project.txt => cCTools/src/main/resources/emulatorview/proguard-project.txt
+* libraries/emulatorview/project.properties => cCTools/src/main/resources/emulatorview/project.properties
+* libraries/emulatorview/res/drawable-nodpi/atari_small_nodpi.png => cCTools/src/main/resources/emulatorview/res/drawable-nodpi/atari_small_nodpi.png
+* libraries/emulatorview/res/drawable/atari_small.png => cCTools/src/main/resources/emulatorview/res/drawable/atari_small.png
+* libraries/emulatorview/src/jackpal/androidterm/emulatorview/package.html => cCTools/src/main/resources/emulatorview/src/jackpal/androidterm/emulatorview/package.html
+* libs/kellinwood-logging-lib-1.1.jar => cCTools/libs/kellinwood-logging-lib-1.1.jar
+* libs/zipio-lib-1.8.jar => cCTools/libs/zipio-lib-1.8.jar
+* libs/zipsigner-lib-1.17.jar => cCTools/libs/zipsigner-lib-1.17.jar
+* libs/zipsigner-lib-optional-1.16.jar => cCTools/libs/zipsigner-lib-optional-1.16.jar
+* lint.xml => cCTools/lint.xml
+* res/ => cCTools/src/main/res/
+* src/ => cCTools/src/main/java/
+* src/.DS_Store => cCTools/src/main/resources/.DS_Store
+* src/com/.DS_Store => cCTools/src/main/resources/com/.DS_Store
+* src/com/pdaxrom/.DS_Store => cCTools/src/main/resources/com/pdaxrom/.DS_Store
+* src/org/.DS_Store => cCTools/src/main/resources/org/.DS_Store
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

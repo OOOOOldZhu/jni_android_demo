@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/z/zzzz/cctools_2/emulatorview/src/main/assets"/><source path="/Users/z/zzzz/cctools_2/emulatorview/build/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/Users/z/zzzz/cctools_2/emulatorview/src/release/assets"/></dataSet></merger>
