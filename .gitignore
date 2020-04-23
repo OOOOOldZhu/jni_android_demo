@@ -2,13 +2,15 @@
 
 *.class
 
+/cctools/cCtools/build/
 /cctools/build/
 /cctools/apkbuilder/
 /cctools/.gradle/
 /cctools/.idea/
 
-/cctools2/build/
-/cctools2/apkbuilder/
+/cctools_2/cCtools/build/
+/cctools_2/build/
+/cctools_2/apkbuilder/
 /cctools_2/.gradle/
 /cctools_2/.idea/
 
